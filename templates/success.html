@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Playlist</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stars.css')}}">
+    <link rel="stylesheet" href="stars.css">
+    <style>
+        html
+        {
+            color: white;
+        }
+
+        h1
+        {
+            text-align: center;
+        }
+
+        .output
+        {
+            display: flex;
+            justify-content: space-evenly;
+            font-family: 'Poppins',sans-serif;
+            font-size: 2em;
+        }
+
+        .output img
+        {
+            width: 20%;
+            height: 25%;
+
+        }
+
+        a
+        {
+            text-decoration: none;
+            color: royalblue;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+
+    <section class="output">
+       <!-- <img src="{{ url_for('static', filename='resources/orange-rocket.png') }}"  alt="">-->
+     <div>
+
+        <h1>Your spotify link is <a href="{{var}}">here!</a> <br> This link is also sent to your phone number! :)</h1>
+
+    </div>
+       <!-- <img src="{{ url_for('static', filename='resources/blue rocket.png') }}"  alt="">-->
+    </section>
+
+
+</body>
+</html>

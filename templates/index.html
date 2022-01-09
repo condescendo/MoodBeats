@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Beats</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stars.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <a href="https://github.com/rrsingh11/Hackathon" target="_blank"><img src="{{ url_for('static', filename='resources/octocat.png') }} alt="github"></a>
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+
+    <!------------------------------HOME SCREEN------------------------------------------------->
+    <section id='homeScreen'>
+        <img src="{{ url_for('static', filename='resources/mainIcon.png') }}" alt="">
+        <article class='containerA'>
+            <h2>Mood Beats</h2>
+            <h4>Click on this button to get playlists according to your mood</h4>
+            <a href="#content">
+            <span>Get started</span>
+            </a>
+        </article>
+    </section>
+
+
+
+
+    <!------------------------------HOME SCREEN------------------------------------------------->
+
+
+
+    <section id="content">
+        <p>
+            Write here and find playlist for your mood...
+        </p>
+        <article class="containerB">
+          <img src="{{ url_for('static', filename='resources/orange-rocket.png') }}" alt="">
+            <form id="form" action="{{url_for('predict')}}" method="post">
+                <p>
+                <label for="phoneNo">Phone no.</label>
+                <input type="text" name="phone" id="phoneNo" placeholder="XXXXXXXXXX" required>
+                </p>
+                <textarea name="q" id="mytextarea" cols="80" rows="8" placeholder="Tell me, I'm very good in keeping secrets..."></textarea>
+            </form>
+            <img src="{{ url_for('static', filename='resources/blue rocket.png') }}" alt="">
+        </article>
+            <button class="submit" form="form">
+                Get Your Playlist</button></a>
+    </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Reset CSS*/
+
+
+
+
+/*-------------------HOME SCREEN-------------------------------------*/
+a img
+{
+    height: 10vh;
+    text-align: right;
+    margin-left: 94%;
+}
+#homeScreen
+{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+#homeScreen img
+{
+    width: 35%;
+    height: 60%;
+
+}
+
+#homeScreen .containerA
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    width: 40%;
+
+}
+
+#homeScreen .containerA h2
+{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 4rem;
+    text-align: left;
+}
+
+#homeScreen .containerA h4
+{
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-top: 7%;
+    font-size: 1.3rem;
+}
+
+#homeScreen .containerA a[href="#content"]
+{
+    /* border: 1px solid red; */
+    align-self: right;
+    width: 28%;
+    height: 7%;
+    text-align: justify;
+    position: relative;
+    margin-top: 10%;
+    background: linear-gradient(171.7deg, rgba(1, 0, 72, 0.183) -57.12%, rgba(0, 0, 0, 0.383548) 47.34%, rgba(0, 0, 0, 0.61) 237.83%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 29px;
+}
+
+#homeScreen .containerA a[href="#content"] span
+{
+    /* border:1px solid yellow; */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    position: absolute;
+    text-align: center;
+    top: 27%;
+    right: 12%;
+}
+
+#homeScreen .containerA a[href="#content"]:hover
+{
+    background-color: white;
+}
+
+/*-------------------HOME SCREEN-------------------------------------*/
+/*---------------------CONTENT-------------------------------------*/
+
+
+#content
+{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+#content .containerB
+{
+    text-align: center ;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0%;
+}
+
+#content #form
+{
+    display: inline-block;
+}
+#content .containerB textarea
+{
+    background-color: rgba(17, 17, 17, 0.61);
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(151, 151, 151);
+}
+
+#content .containerB img
+{
+    width: 10%;
+    height: 40%;
+}
+
+#content p
+{
+    font-size: 3em;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 8%;
+    cursor: text;
+}
+
+#content .containerB textarea::placeholder
+{
+    color: rgb(71, 71, 71);
+}
+
+#content  .submit
+{
+    display: block;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    height: 6%;
+    width: 18%;
+    margin-top: 3%;
+    margin-left: 41%;
+    margin-bottom: 10%;
+    border-radius: 29px;
+    background-color: royalblue;
+    text-decoration: "none";
+    text-decoration:none;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.08);
+}
+
+#content  .submit:hover
+{
+    background-color: rgb(214, 210, 203);
+}
+
+#form p
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-self: left;
+    width: 20%;
+}
+
+#form p input
+{
+    background-color: rgba(17, 17, 17, 0.61);
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(151, 151, 151);
+    border-radius: 24px;
+    text-align: center;
+}
+
+/*---------------------CONTENT-------------------------------------*/
