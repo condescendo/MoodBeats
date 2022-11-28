@@ -1,5 +1,5 @@
 # MoodBeats
-Enter how you are feeling. Our powerful Machine Learning Algorithm will detect your mood and suggest you a spotify Playlist
+Enter how you are feeling. Our powerful Machine Learning Algorithm will detect your mood and suggest you a spotify Playlist. Also get the spotify link on your messages via Twilio API
 Project Video Link : https://vimeo.com/663947313. 
 
 
